@@ -1,0 +1,49 @@
+<!-- nuestro index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ta Te Ti</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>Juguemos Ta Te Ti!</h1>
+    <div id="board">
+      <div class="cells"></div>
+      <div class="cells"></div>
+      <div class="cells"></div>
+      <div class="cells"></div>
+      <div class="cells"></div>
+      <div class="cells"></div>
+      <div class="cells"></div>
+      <div class="cells"></div>
+      <div class="cells"></div>
+    </div>
+    <div>
+      <label for="player1-name">Nombre del jugador 1:</label>
+      <input type="text" id="player1-name" />
+    </div>
+    <div>
+      <label for="player2-name">Nombre del jugador 2:</label>
+      <input type="text" id="player2-name" />
+    </div>
+    <h2 id="current-player"></h2>
+    <button id="start-button">Inicio</button>
+    <button id="restart-button" disabled>Reinicio</button>
+    <script src="./script.js"></script>
+  </body>
+  <script>
+    // Crear una matriz de números enteros con 2 filas y 3 columnas
+let matriz = [[1, 2, 3], [4, 5, 6]];
+
+// Acceder al elemento en la segunda fila y la tercera columna (índice 1, 2)
+console.log(matriz[1][2]); // 6
+
+// Recorrer los elementos de la matriz con dos ciclos for anidados
+for (let i = 0; i < matriz.length; i++) {
+  for (let j = 0; j < matriz[i].length; j++) {
+    console.log(matriz[i][j]);
+  }
+}
+</script>
+</html>
+
